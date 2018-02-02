@@ -1,0 +1,42 @@
+{
+  "extends": [
+    "google",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "indent": [2, 2, {"SwitchCase": 1}],
+    "require-jsdoc": 0,
+    "no-invalid-this": 0,
+    "no-undef": "error",
+    "no-undef-init": "error",
+    "no-dupe-keys": "error",
+    "no-const-assign": "error",
+    "prefer-template": "error",
+    "react/jsx-no-undef": "error",
+    "no-console": "off",
+    "max-len": [1,120, 4, {"ignoreUrls": true}],
+    "quotes": ["error", "single"],
+    "jsx-quotes": ["error", "prefer-double"],
+    "keyword-spacing": ["error"],
+    "react/jsx-wrap-multilines": ["error"],
+    "react/jsx-closing-bracket-location": ["error", "line-aligned"],
+    "react/jsx-tag-spacing": ["error", {"beforeSelfClosing": "always"}],
+    "linebreak-style": ["error", "windows"]
+  },
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "env": {
+    "node": true,
+    "mocha": true,
+    "es6": true
+  },
+  "globals": {
+    "expect": true,
+    "window": false,
+    "document": false,
+    "__CLIENT__": false,
+    "__PRODUCTION__": false
+  }
+}
